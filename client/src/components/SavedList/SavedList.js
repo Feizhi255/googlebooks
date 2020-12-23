@@ -3,6 +3,7 @@ import SavedListItem from "../SavedListItem/SavedListItem";
 
 class ResultList extends Component {
   render() {
+    console.log("Props", this.props.bookState);
     return this.props.bookState.map((book) => (
       <SavedListItem
         key={book._id}

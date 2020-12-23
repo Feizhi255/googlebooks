@@ -31,6 +31,7 @@ class Saved extends Component {
         this.setState({
           savedBooks: res.data,
         });
+        console.log("This is the res from getBooks", res);
       })
       .catch((err) => {
         console.log("This is the error", err);

@@ -16,6 +16,7 @@ class Home extends Component {
   searchBooks = () => {
     API.googleBooks(this.state.search)
       .then((res) => {
+        console.log("This is res.data", res.data.items);
         this.setState({
           books: res.data.items,
           search: "",
@@ -39,6 +40,7 @@ class Home extends Component {
   };
 
   saveGoogleBook = (currentBook) => {
+    console.log("This is the current book", currentBook);
     API.saveBook({
       id: currentBook.id,
       title: currentBook.title,

@@ -13,6 +13,7 @@ class ResultListItem extends Component {
     this.setState({
       mounted: true,
     });
+    console.log("Mounted!");
   };
 
   getStyle = () => {
@@ -59,7 +60,7 @@ class ResultListItem extends Component {
   // }
 
   render() {
-    // const { book } = this.props;
+    const { book } = this.props;
 
     return (
       <div>

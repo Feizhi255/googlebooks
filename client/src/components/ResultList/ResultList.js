@@ -3,6 +3,7 @@ import ResultListItem from "../ResultListItem/ResultListItem";
 
 class ResultList extends Component {
   render() {
+    console.log("Props", this.props.bookState);
     return this.props.bookState.map((book) => (
       <ResultListItem
         key={book.id}
