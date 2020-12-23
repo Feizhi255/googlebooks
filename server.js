@@ -1,5 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
+require('dotenv').config()
 const routes = require("./routes");
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -17,6 +18,8 @@ app.use(routes);
 
 // Connect to the Mongo DB
 var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/googlebooks";
+
+console.log(process.env.MONGODB_URI, "test")
 
 mongoose.connect(MONGODB_URI, {
   useUnifiedTopology: true,
