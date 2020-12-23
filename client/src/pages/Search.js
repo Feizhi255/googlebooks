@@ -79,7 +79,7 @@ class Search extends Component {
                       // if no imageLinks then use placeholder image
                       image={
                         book.volumeInfo.imageLinks === undefined
-                          ? "http://siddallheatingandcooling.net/_imgstore/5/1360415/thumbnail/FSeY96wEdX_eY4XkBN2jfYnuY9A.png"
+                          ? "https://via.placeholder.com/150"
                           : `${book.volumeInfo.imageLinks.thumbnail}`
                       }
                     />
